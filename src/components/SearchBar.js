@@ -7,7 +7,7 @@ export class SearchBar extends Component {
     };
     onFormSubmit=(event)=>{
         event.preventDefault()
-        console.log(event.target.value)
+        console.log(this.state.term)
     }
     render() {
         return (
