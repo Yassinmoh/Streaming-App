@@ -5,9 +5,9 @@ export class SearchBar extends Component {
     onInputChange = (event) => {
         this.setState({ term: event.target.value })
     };
-    onFormSubmit=(event)=>{
+    onFormSubmit = (event) => {
         event.preventDefault()
-        console.log(this.state.term)
+        this.props.onFormSubmit(this.state.term)
     }
     render() {
         return (
