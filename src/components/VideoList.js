@@ -7,7 +7,7 @@ const VideoList = ({ videos }) => {
     const renderList =videos.map(video => (
         <VideoItem video={video}  key={Math.random()}/>))
     return (
-        <div>
+        <div className="ui relaxed divided list">
             {renderList}
         </div>
     )
