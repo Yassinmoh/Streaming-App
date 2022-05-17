@@ -1,3 +1,4 @@
+import '../styles/SearchBar.css'
 import React, { Component } from 'react'
 
 export class SearchBar extends Component {
@@ -13,7 +14,7 @@ export class SearchBar extends Component {
         return (
             <div className="ui segment search-bar">
                 <form onSubmit={this.onFormSubmit} className="ui form">
-                    <label>Search Video</label>
+                    {/* <label>Search Video</label> */}
                     <input
                         className="field"
                         type="text"

@@ -2,6 +2,24 @@
     display: flex !important;
     align-items: center !important;
     cursor: pointer;
+    padding-left: 1rem !important;
+    /* padding: 1.5rem 1rem !important; */
+}
+.video-item:first-child{
+    padding-top: 1rem !important;
+}
+.video-item:last-child{
+    padding-bottom: 1rem !important;
+}
+
+.video-item h4{
+    color:white;
+    font-size:14px !important;
+    line-height:20px !important;
+    font-weight:500 !important;
+
+
+
 }
 
 .video-item.item img {
