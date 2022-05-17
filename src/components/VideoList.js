@@ -3,9 +3,9 @@ import VideoItem from './VideoItem'
 
 
 
-const VideoList = ({ videos }) => {
+const VideoList = ({ videos,onSelectedVideo }) => {
     const renderList =videos.map(video => (
-        <VideoItem video={video}  key={Math.random()}/>))
+        <VideoItem onSelectedVideo={onSelectedVideo} video={video}  key={Math.random()}/>))
     return (
         <div className="ui relaxed divided list">
             {renderList}
